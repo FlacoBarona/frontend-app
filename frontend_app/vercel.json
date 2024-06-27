@@ -14,9 +14,5 @@
       "src": "/(.*)",
       "dest": "/dist/frontend_app/browser/$1"
     }
-  ],
-  "cache": [
-    "node_modules",
-    ".next/cache"
   ]
 }
