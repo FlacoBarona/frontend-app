@@ -11,14 +11,12 @@
   ],
   "routes": [
     {
-      "src": "/(.+\\.js)",
-      "headers": { "Content-Type": "text/javascript" },
-      "dest": "/dist/frontend_app/browser/$1"
-    },
-    {
       "src": "/(.*)",
-      "headers": { "Cache-Control": "public, max-age=0, must-revalidate" },
-      "dest": "/dist/frontend_app/browser/index.html"
+      "dest": "/dist/frontend_app/browser/$1"
     }
+  ],
+  "cache": [
+    "node_modules",
+    ".next/cache"
   ]
 }
